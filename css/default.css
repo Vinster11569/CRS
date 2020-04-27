@@ -1,0 +1,86 @@
+/* top elements */
+
+/** { padding: 0; margin: 0; }*/
+
+* {
+	margin: 1; /* zero out margin */
+	padding: 1; /* zero out padding */
+}
+
+
+html {
+
+	height:100%; /* needed for container min-height */
+	overflow:inherit; /* triggers 100% height in Opera 9.5 */	
+
+}
+
+
+
+body {
+height:100%;
+
+	margin: 1;
+
+	padding: 1;
+
+	font: .75em/1.6em  Verdana, Arial, Tahoma, Helvetica, sans-serif;
+
+	color: #000000; 
+}
+
+
+
+/* links */
+
+a { 
+
+	color: #4284B0;
+
+	background-color: inherit;
+
+	text-decoration: none;
+
+}
+
+
+
+a:hover {
+
+	color: #9EC068;
+
+	background-color: inherit;
+
+}
+
+
+
+
+.PageReadableBlue {
+	color: #0080C0;
+}
+
+.PageReadableBrightRed {
+	color: #F00;
+}
+
+.PageReadableDarkRed {
+	color: #003300;
+}
+
+.PageReadableDarkGreen {
+	color: #003300;
+}
+
+.PageReadableBrightGreen {
+	color: #00FF00;
+}
+
+.PageReadableBlack {
+	color: #000000;
+
+}
+
+.PageReadableWhite {
+	color: #FFFFFF;
+}
