@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Javescript Test</title>
+</head>
+<body>
+
+
+<table border="1">
+<tr><th>Body Part</th><th>Level 1</th><th>Level 2</th><th>Level 3</th></tr>
+
+<tr><td>Elbow</td><td>Observation</td><td>Posture</td><td onclick="this.style.backgroundColor = '#00FF00';"><input type="checkbox" name="ECarryAngle" id="ECarryAngle" value="Carry Angle">Carry Angle</td></tr>
+<tr><td></td><td></td><td onclick="this.style.backgroundColor = '#F00';"><input type="checkbox" name="EMuscleForm" id="EMuscleForm" value="Muscle Form">Muscle Form</td><td></td></tr>
+</table>
+
+
+<!-- 
+onclick="this.style.backgroundColor = 'Red';"
+onclick="this.style.backgroundColor = 'Green';" 
+ -->
+
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+	
+<script>
+function goGreen() {
+  this.style.backgroundColor = '#00FF00';
+}
+
+function goRed() {
+    var x = document.getElementById("demo");
+    x.style.bgcolor = "#F00"; 
+}
+
+</script>	
+
+</body>
+</html>

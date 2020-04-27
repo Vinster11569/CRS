@@ -1,0 +1,376 @@
+<HTML>
+<HEAD>
+<TITLE>Insert Case Study Data Form
+</TITLE>
+
+
+<link rel="stylesheet" type="text/css" href=".css/default.css">
+</head>
+<body>
+<h1 align="center">FRONT PAGE.</h1>
+<div class="PageReadableBlue"><p>Welcome to the Bournemouth University physiotherapy clinical reasoning tool.</p>
+<p>The purpose of this tool is to simulate the assessment and management process within an outpatients physiotherapy setting to enable development of your clinical reasoning skills prior to placement.</p>
+<p>As you work through each section you will collect information from a subjective interview and information from an objective physical assessment.  Gathered information will be used to guide the clinical reasoning process through a series of multiple choice questions.  The next stage enables you to write a problem list, goals and a treatment plan for the case study. In the final section you choose from a series of treatment options and will receive feedback on your choices.</p></div>
+
+<h1 align="center">PAGE ONE.</h1>
+<FORM ACTION="CR_Input.php" METHOD=POST>
+<p>Case Study : <input type=text name="Case_Study_Name" size=10><br />
+<p><div class="PageReadableBlue">This is the case study of <input type=text name="Patient_Name" size=10><br />
+You will need to print out a copy of the assessment form.</div>&nbsp;<div class="PageReadableBlack"><strong>[Word doc - clinical reasoning form]</strong></div></p>
+
+<h1 align="center">PAGE TWO.</h1>
+<div class="PageReadableBlue"><p>Section 1: Subjective Interview:</p>
+<p><img src="./images/lightbulb.jpg" alt="Light Bulb" / ></p>
+<p>Using the following resources </div>&nbsp;<div class="PageReadableBlack"><strong>[Word doc - referral letter]</strong></div></p>
+
+<div class="PageReadableBlue"><p>Write down your initial thoughts.</p></div>
+ <textarea name="InitialThoughts" rows="10" cols="80">
+
+</textarea>
+
+<div class="PageReadableBlue"><p>Watch the following subjective interview, all the way through - in one go, to simulate a real life scenario.</p>
+
+<p>Document the findings on the assessment form in <q>real time</q> as you watch the video.  As you watch the subjective assessment document on the assessment forms the findings.</p></div>
+
+<div class="PageReadableBlack"><p><strong>[Video - Subjective interview]</strong></p></div>
+
+<div class="PageReadableDarkGreen"><p>Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>You should how have collected a subjective history for Mr A.</p></div>
+
+<p><img src="./images/lightbulb.jpg" alt="Light Bulb" / ></p>
+
+<div class="PageReadableBlue"><p>Listen again for a second time to the subjective history. This time the recording will be paused to allow time to consider the responses and improve your documentation.</p>
+<p>Multiple choices questions will then be asked to aid your clinical reasoning.</p></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 1 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(01)&nbsp;Read about 'Stage of condition'</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Stage of Condition]</strong></div></p>
+
+<div class="PageReadableBlue"><p>What stage is the condition?</p>
+<input type="radio" name="StageCondition" value="Acute">Acute<br />
+<input type="radio" name="StageCondition" value="Sub-acute">Sub-acute<br />
+<input type="radio" name="StageCondition" value="Chronic">Chronic<br /></div>
+
+<div class="PageReadableBlue"><p>(02)&nbsp;Read about 'Condition progression'</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Condition progression]</strong></div></p>
+
+<div class="PageReadableBlue"><p>How is the condition progressing?</p>
+<input type="radio" name="ConditionProgress" value="Improving">Improving<br />
+<input type="radio" name="ConditionProgress" value="Static">Static<br />
+<input type="radio" name="ConditionProgress" value="Worsening">Worsening<br /></div>
+
+<div class="PageReadableBlue"><p>(03a)&nbsp;Read about 'Mechanism of injury'</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Mechanism of Injury]</strong></div></p>
+
+<div class="PageReadableBlue"><p>What was the mechanism of injury?</p>
+<input type="radio" name="InjuryMechanism" value="Insidious onset">Insidious onset<br />
+<input type="radio" name="InjuryMechanism" value="Specific event">Specific event<br /></div>
+
+<p>ON LIVE SYSTEM - Section 3b should not be visible until section 3a has been completed.</p>
+
+<div class="PageReadableBlue"><p>(03b)&nbsp;Read about 'Aggravating factors'</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Aggravating Factors]</strong></div></p>
+
+<div class="PageReadableBlue"><p>What factors aggravated the condition? (Please choose as many as applicable)</p>
+<input type="checkbox" name="AggravatingFactors" value="Moving house">Moving house<br />
+<input type="checkbox" name="AggravatingFactors" value="Painting">Painting<br />
+<input type="checkbox" name="AggravatingFactors" value="Repeated Movements">Repeated Movements<br />
+<input type="checkbox" name="AggravatingFactors" value="Rest">Rest<br />
+<input type="checkbox" name="AggravatingFactors" value="Arm Elevation">Arm Elevation<br />
+<input type="checkbox" name="AggravatingFactors" value="Touching The Arm">Touching The Arm<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 2 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(04)&nbsp;Read about <q>Descriptions of Pain</q></div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Description of Pain]</strong></div></p>
+
+<div class="PageReadableBlue"><p>What does an achey pain indicate? (Please choose as many as applicable)</p>
+<input type="checkbox" name="PainIndicator" value="Inflammatory">Inflammatory<br />
+<input type="checkbox" name="PainIndicator" value="Mechanical">Mechanical<br />
+<input type="checkbox" name="PainIndicator" value="Arthrogenic">Arthrogenic<br />
+<input type="checkbox" name="PainIndicator" value="Myogenic">Myogenic<br />
+<input type="checkbox" name="PainIndicator" value="Vasculogenic">Vasculogenic<br />
+<input type="checkbox" name="PainIndicator" value="Neurogenic">Neurogenic<br />
+<input type="checkbox" name="PainIndicator" value="Red Flag">Red Flag<br />
+<input type="checkbox" name="PainIndicator" value="Yellow Flag">Yellow Flag<br /></div>
+
+<div class="PageReadableBlue"><p>(05)&nbsp;Read an anatomy text to review the <q>Location of the pain</q></div>&nbsp;<div class="PageReadableBlack"><strong>[Anatomy text ref/weblink-Anatomy TV]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(a)&nbsp;What structures <q>Lie Beneath</q> the <q>Back of the forearm</q>? (Please choose as many as applicable)</p>
+<input type="checkbox" name="ForearmStructure" value="Radius">Radius<br />
+<input type="checkbox" name="ForearmStructure" value="Ulna">Ulna<br />
+<input type="checkbox" name="ForearmStructure" value="Wrist Exterior Muscles">Wrist Exterior Muscles<br />
+<input type="checkbox" name="ForearmStructure" value="Wrist Flexor Muscles">Wrist Flexor Muscles<br />
+<input type="checkbox" name="ForearmStructure" value="Radial Nerve">Radial Nerve<br />
+<input type="checkbox" name="ForearmStructure" value="Ulnal Nerve">Ulnal Nerve<br />
+<input type="checkbox" name="ForearmStructure" value="Median Nerve">Median Nerve<br /></div>
+
+<div class="PageReadableBlue"><p>(b)&nbsp;What structures <q>Lie Beneath</q> the <q>lateral elbow</q>? (Please choose as many as applicable)</p>
+<input type="checkbox" name="ElbowStructure" value="PRUJ">Proximal radio-ulna joint (PRUJ)<br />
+<input type="checkbox" name="ElbowStructure" value="DRUJ">Distal radio-ulna joint (DRUJ)<br />
+<input type="checkbox" name="ElbowStructure" value="HRJ">Humero-radial joint (HRJ))<br />
+<input type="checkbox" name="ElbowStructure" value="HUJ">Humero-ulna joint (HUJ)<br />
+<input type="checkbox" name="ElbowStructure" value="Wrist Exterior Muscles">Wrist Exterior Muscles<br />
+<input type="checkbox" name="ElbowStructure" value="Wrist Flexor Muscles">Wrist Flexor Muscles<br />
+<input type="checkbox" name="ElbowStructure" value="Radial Nerve">Radial Nerve<br />
+<input type="checkbox" name="ElbowStructure" value="Ulnal Nerve">Ulnal Nerve<br />
+<input type="checkbox" name="ElbowStructure" value="Median Nerve">Median Nerve<br />
+<input type="checkbox" name="ElbowStructure" value="CETO">Common Extensor Tendon Origin (CETO)<br />
+<input type="checkbox" name="ElbowStructure" value="CFTO">Common Flexor Tendon Origin (CFTO)<br /></div>
+
+<div class="PageReadableBlue"><p>(06)&nbsp;Look at an anatomy text to consider what structures may <q>Refer symptoms</q> to the location of the pain.</div>&nbsp;<div class="PageReadableBlack"><strong>[Anatomy text ref/weblink-Anatomy TV]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(a)&nbsp;What structures <q>Refer symptoms</q> to the <q>Back of the forearm</q>? (please choose as many as applicable)</p>
+
+<input type="checkbox" name="BackForearmStructure" value="C5 nerve root">C5 nerve root<br />
+<input type="checkbox" name="BackForearmStructure" value="C6 nerve root">C6 nerve root<br />
+<input type="checkbox" name="BackForearmStructure" value="C7 nerve root">C7 nerve root<br />
+<input type="checkbox" name="BackForearmStructure" value="T1 nerve root">T1 nerve root<br />
+<input type="checkbox" name="BackForearmStructure" value="Radial nerve">Radial nerve<br />
+<input type="checkbox" name="BackForearmStructure" value="Ulnar nerve">Ulnar nerve<br />
+<input type="checkbox" name="BackForearmStructure" value="Median nerve">Median nerve<br />
+<input type="checkbox" name="BackForearmStructure" value="Distal radio-ulnar Joint">Distal radio-ulnar Joint<br />
+<input type="checkbox" name="BackForearmStructure" value="C5/6 Facet Joint">C5/6 Facet Joint<br />
+<input type="checkbox" name="BackForearmStructure" value="C6/7 Facet Joint">C6/7 Facet Joint<br />
+<input type="checkbox" name="BackForearmStructure" value="C8 Sclerotome">C8 Sclerotome<br />
+<input type="checkbox" name="BackForearmStructure" value="C7 Sclerotome">C7 Sclerotome<br />
+<input type="checkbox" name="BackForearmStructure" value="C6 Sclerotome">C6 Sclerotome<br />
+<input type="checkbox" name="BackForearmStructure" value="Heart/ Cardiac">Heart/ Cardiac<br />
+<input type="checkbox" name="BackForearmStructure" value="Liver">Liver<br />
+<input type="checkbox" name="BackForearmStructure" value="Infraspinatus trigger point">Infraspinatus trigger point<br />
+<input type="checkbox" name="BackForearmStructure" value="Supraspinatus trigger point">Supraspinatus trigger point<br /></div>
+
+<div class="PageReadableBlue"><p>(b)&nbsp;What structures <q>Refer symptoms</q> to the <q>Lateral elbow</q>? (please choose as many as applicable)</p>
+
+<input type="checkbox" name="LateralElbow" value="C5 nerve root">C5 nerve root<br />
+<input type="checkbox" name="LateralElbow" value="C6 nerve root">C6 nerve root<br />
+<input type="checkbox" name="LateralElbow" value="C7 nerve root">C7 nerve root<br />
+<input type="checkbox" name="LateralElbow" value="T1 nerve root">T1 nerve root<br />
+<input type="checkbox" name="LateralElbow" value="Radial nerve">Radial nerve<br />
+<input type="checkbox" name="LateralElbow" value="Ulnar nerve">Ulnar nerve<br />
+<input type="checkbox" name="LateralElbow" value="Median nerve">Median nerve<br />
+<input type="checkbox" name="LateralElbow" value="DRUJ">Distal radio-ulnar Joint (DRUJ)<br />
+<input type="checkbox" name="LateralElbow" value="C5/6 Facet Joint">C5/6 Facet Joint<br />
+<input type="checkbox" name="LateralElbow" value="C6/7 Facet Joint">C6/7 Facet Joint<br />
+<input type="checkbox" name="LateralElbow" value="C8 Sclerotome">C8 Sclerotome<br />
+<input type="checkbox" name="LateralElbow" value="C7 Sclerotome">C7 Sclerotome<br />
+<input type="checkbox" name="LateralElbow" value="C6 Sclerotome">C6 Sclerotome<br />
+<input type="checkbox" name="LateralElbow" value="Heart/ Cardiac">Heart/ Cardiac<br />
+<input type="checkbox" name="LateralElbow" value="Liver">Liver<br />
+<input type="checkbox" name="LateralElbow" value="Infraspinatus trigger point">Infraspinatus trigger point<br />
+<input type="checkbox" name="LateralElbow" value="Supraspinatus trigger point">Supraspinatus trigger point<br />
+
+<div class="PageReadableDarkGreen"><p>Clip 3 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(07)&nbsp;<q>Relationship of symptoms</q>.</p>
+<p>Are the symptons related?</p>
+<p><input type="radio" name="RelatedSymptom" value="Yes">Yes&nbsp;
+<input type="radio" name="RelatedSymptom" value="No">No</p>
+
+<div class="PageReadableBlue"><p>(08)&nbsp;Read about <q>Easing factors</q></div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Easing Factors]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(b)&nbsp;What factors ease the condition? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="EasingFactor" value="Moving House">Moving House<br />
+<input type="checkbox" name="EasingFactor" value="Painting">Painting<br />
+<input type="checkbox" name="EasingFactor" value="Repeated movements">Repeated movements<br />
+<input type="checkbox" name="EasingFactor" value="Rest">Rest<br />
+<input type="checkbox" name="EasingFactor" value="Arm Elevation">Arm Elevation<br />
+<input type="checkbox" name="EasingFactor" value="Touching the arm">Touching the arm<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 4 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(09)&nbsp;Read about descriptions of pain.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Description of Pain]</strong></div></p>
+
+<div class="PageReadableBlue"><p>What might a <q>Single location of symptons</q> indicate? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="PainLocation" value="Inflammatory">Inflammatory<br />
+<input type="checkbox" name="PainLocation" value="Mechanical">Mechanical<br />
+<input type="checkbox" name="PainLocation" value="Arthrogenic">Arthrogenic<br />
+<input type="checkbox" name="PainLocation" value="Myogenic">Myogenic<br />
+<input type="checkbox" name="PainLocation" value="Vasculogenic">Vasculogenic<br />
+<input type="checkbox" name="PainLocation" value="Neurogenic">Neurogenic<br />
+<input type="checkbox" name="PainLocation" value="Red Flag">Red Flag<br />
+<input type="checkbox" name="PainLocation" value="Yellow Flag">Yellow Flag<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 5 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(10)&nbsp;Read about descriptions of pain.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Description of Pain]</strong></div></p>
+
+<div class="PageReadableBlue"><p>What does lack of <q>pins and needles or numbness</q> reduce the likelihood of being the source of symptoms?  (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="SymptomSource" value="Inflammatory">Inflammatory<br />
+<input type="checkbox" name="SymptomSource" value="Mechanical">Mechanical<br />
+<input type="checkbox" name="SymptomSource" value="Arthrogenic">Arthrogenic<br />
+<input type="checkbox" name="SymptomSource" value="Myogenic">Myogenic<br />
+<input type="checkbox" name="SymptomSource" value="Vasculogenic">Vasculogenic<br />
+<input type="checkbox" name="SymptomSource" value="Neurogenic">Neurogenic<br />
+<input type="checkbox" name="SymptomSource" value="Red Flag">Red Flag<br />
+<input type="checkbox" name="SymptomSource" value="Yellow Flag">Yellow Flag<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 6 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(11)&nbsp;Read about verbal and visual analogue scores.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - VAS]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(What would you estimate is the severity of the symptoms based on <q>Pain score</q>? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="VAS" value="Non painful">Non painful<br />
+<input type="checkbox" name="VAS" value="Mild">Mild<br />
+<input type="checkbox" name="VAS" value="Moderate">Moderate<br />
+<input type="checkbox" name="VAS" value="Severe">Severe<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 7 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(12)&nbsp;Read about <q>SIN</q> factors and description of Pain.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - SIN Factors] &nbsp;[doc/pdf/ref - Description of Pain]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(a)&nbsp;Estimate the severity of the symptoms based on <q>duration of pain</q>? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="SINPain" value="Non painful">Non painful<br />
+<input type="checkbox" name="SINPain" value="Mild">Mild<br />
+<input type="checkbox" name="SINPain" value="Moderate">Moderate<br />
+<input type="checkbox" name="SINPain" value="Severe">Severe<br /></div>
+
+<div class="PageReadableBlue"><p>(b)&nbsp;What does a <q>coming and going</q> pain indicate? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="Comego" value="Inflammatory">Inflammatory<br />
+<input type="checkbox" name="Comego" value="Mechanical">Mechanical<br />
+<input type="checkbox" name="Comego" value="Arthrogenic">Arthrogenic<br />
+<input type="checkbox" name="Comego" value="Myogenic">Myogenic<br />
+<input type="checkbox" name="Comego" value="Vasculogenic">Vasculogenic<br />
+<input type="checkbox" name="Comego" value="Neurogenic">Neurogenic<br />
+<input type="checkbox" name="Comego" value="Red Flag">Red Flag<br />
+<input type="checkbox" name="Comego" value="Yellow Flag">Yellow Flag<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 8 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(13)&nbsp;Read about <q>SIN</q> factors</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - SIN Factors]</strong></div></p>
+
+<div class="PageReadableBlue"><p>Estimate the irritability of the symptoms based on times taken to aggravate and ease the symptoms? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="IrritableSymptoms" value="Non irritable">Non irritable<br />
+<input type="checkbox" name="IrritableSymptoms" value="Mild">Mild<br />
+<input type="checkbox" name="IrritableSymptoms" value="Moderate">Moderate<br />
+<input type="checkbox" name="IrritableSymptoms" value="Severe">Severe<br /></div>
+
+<div class="PageReadableBlue"><p>(14)&nbsp;Read about <q>Aggravating factors</q> and refer to an anatomy text. </div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Aggravating Factors] [Anatomy text ref/weblink-Anatomy TV]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(a)&nbsp;Which structures may be aggravated by gripping and using a screw driver? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="AggroGrip" value="PRUJ">Proximal radio-ulna joint (PRUJ)<br />
+<input type="checkbox" name="AggroGrip" value="DRUJ">Distal radio-ulna joint (DRUJ)<br />
+<input type="checkbox" name="AggroGrip" value="HRJ">Humero-radial joint (HRJ))<br />
+<input type="checkbox" name="AggroGrip" value="HUJ">Humero-ulna joint (HUJ)<br />
+<input type="checkbox" name="AggroGrip" value="Wrist Exterior Muscles">Wrist Exterior Muscles<br />
+<input type="checkbox" name="AggroGrip" value="Wrist Flexor Muscles">Wrist Flexor Muscles<br />
+<input type="checkbox" name="AggroGrip" value="Elbow extensor muscles">Elbow extensor muscles<br />
+<input type="checkbox" name="AggroGrip" value="Elbow flexor muscles">Elbow flexor muscles<br />
+<input type="checkbox" name="AggroGrip" value="Elbow pronator muscles">Elbow pronator muscles<br />
+<input type="checkbox" name="AggroGrip" value="Elbow supinator muscles">Elbow supinator muscles<br />
+<input type="checkbox" name="AggroGrip" value="Radial Nerve">Radial Nerve<br />
+<input type="checkbox" name="AggroGrip" value="Ulnal Nerve">Ulnal Nerve<br />
+<input type="checkbox" name="AggroGrip" value="Median Nerve">Median Nerve<br />
+<input type="checkbox" name="AggroGrip" value="CETO">Common Extensor Tendon Origin(CETO)<br />
+<input type="checkbox" name="AggroGrip" value="CFTO">Common Flexor Tendon Origin (CFTO)<br /></div>
+
+<div class="PageReadableBlue"><p>(b)&nbsp;Which structures may be aggravated by a knock to the side of the elbow? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="AggroKnock" value="PRUJ">Proximal radio-ulna joint (PRUJ)<br />
+<input type="checkbox" name="AggroKnock" value="DRUJ">Distal radio-ulna joint (DRUJ)<br />
+<input type="checkbox" name="AggroKnock" value="HRJ">Humero-radial joint (HRJ))<br />
+<input type="checkbox" name="AggroKnock" value="HUJ">Humero-ulna joint (HUJ)<br />
+<input type="checkbox" name="AggroKnock" value="Wrist Exterior Muscles">Wrist Exterior Muscles<br />
+<input type="checkbox" name="AggroKnock" value="Wrist Flexor Muscles">Wrist Flexor Muscles<br />
+<input type="checkbox" name="AggroKnock" value="Elbow extensor muscles">Elbow extensor muscles<br />
+<input type="checkbox" name="AggroKnock" value="Elbow flexor muscles">Elbow flexor muscles<br />
+<input type="checkbox" name="AggroKnock" value="Elbow pronator muscles">Elbow pronator muscles<br />
+<input type="checkbox" name="AggroKnock" value="Elbow supinator muscles">Elbow supinator muscles<br />
+<input type="checkbox" name="AggroKnock" value="Radial Nerve">Radial Nerve<br />
+<input type="checkbox" name="AggroKnock" value="Ulnal Nerve">Ulnal Nerve<br />
+<input type="checkbox" name="AggroKnock" value="Median Nerve">Median Nerve<br />
+<input type="checkbox" name="AggroKnock" value="CETO">Common Extensor Tendon Origin(CETO)<br />
+<input type="checkbox" name="AggroKnock" value="CFTO">Common Flexor Tendon Origin (CFTO)<br /></div>
+
+<div class="PageReadableBlue"><p>(c)&nbsp;Which structures may be aggravated by driving a car? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="AggroDrive" value="PRUJ">Proximal radio-ulna joint (PRUJ)<br />
+<input type="checkbox" name="AggroDrive" value="DRUJ">Distal radio-ulna joint (DRUJ)<br />
+<input type="checkbox" name="AggroDrive" value="HRJ">Humero-radial joint (HRJ))<br />
+<input type="checkbox" name="AggroDrive" value="HUJ">Humero-ulna joint (HUJ)<br />
+<input type="checkbox" name="AggroDrive" value="Wrist Exterior Muscles">Wrist Exterior Muscles<br />
+<input type="checkbox" name="AggroDrive" value="Wrist Flexor Muscles">Wrist Flexor Muscles<br />
+<input type="checkbox" name="AggroDrive" value="Elbow extensor muscles">Elbow extensor muscles<br />
+<input type="checkbox" name="AggroDrive" value="Elbow flexor muscles">Elbow flexor muscles<br />
+<input type="checkbox" name="AggroDrive" value="Elbow pronator muscles">Elbow pronator muscles<br />
+<input type="checkbox" name="AggroDrive" value="Elbow supinator muscles">Elbow supinator muscles<br />
+<input type="checkbox" name="AggroDrive" value="Radial Nerve">Radial Nerve<br />
+<input type="checkbox" name="AggroDrive" value="Ulnal Nerve">Ulnal Nerve<br />
+<input type="checkbox" name="AggroDrive" value="Median Nerve">Median Nerve<br />
+<input type="checkbox" name="AggroDrive" value="CETO">Common Extensor Tendon Origin(CETO)<br />
+<input type="checkbox" name="AggroDrive" value="CFTO">Common Flexor Tendon Origin (CFTO)<br /></div>
+
+<div class="PageReadableBlue"><p>(15)&nbsp;Read about <q>Easing factors</q> and description of pain. </div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - Easing Factors] [doc/pdf/ref - description of pain]</strong></div></p>
+
+<div class="PageReadableDarkGreen"><p>Clip 8????? - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(a)&nbsp;What does an easing factor of <q>anti-inflammatory medication</q> indicate? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="AIMed" value="Inflammatory">Inflammatory<br />
+<input type="checkbox" name="AIMed" value="Mechanical">Mechanical<br />
+<input type="checkbox" name="AIMed" value="Arthrogenic">Arthrogenic<br />
+<input type="checkbox" name="AIMed" value="Myogenic">Myogenic<br />
+<input type="checkbox" name="AIMed" value="Vasculogenic">Vasculogenic<br />
+<input type="checkbox" name="AIMed" value="Neurogenic">Neurogenic<br />
+<input type="checkbox" name="AIMed" value="Red Flag">Red Flag<br />
+<input type="checkbox" name="AIMed" value="Yellow Flag">Yellow Flag<br /></div>
+
+<div class="PageReadableBlue"><p>(b)&nbsp;What does an easing factor of <q>cryotherapy</q> easing factor indicate? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="Cryotherapy" value="Inflammatory">Inflammatory<br />
+<input type="checkbox" name="Cryotherapy" value="Mechanical">Mechanical<br />
+<input type="checkbox" name="Cryotherapy" value="Arthrogenic">Arthrogenic<br />
+<input type="checkbox" name="Cryotherapy" value="Myogenic">Myogenic<br />
+<input type="checkbox" name="Cryotherapy" value="Vasculogenic">Vasculogenic<br />
+<input type="checkbox" name="Cryotherapy" value="Neurogenic">Neurogenic<br />
+<input type="checkbox" name="Cryotherapy" value="Red Flag">Red Flag<br />
+<input type="checkbox" name="Cryotherapy" value="Yellow Flag">Yellow Flag<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 9 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(16)&nbsp;Read about <q>SIN</q> factors.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - SIN Factor] &nbsp;[Clip 8?????]</strong></div></p>
+
+<div class="PageReadableBlue"><p>Estimate the irritability of the symptoms based on times taken to aggravate andease the symptons? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="SINIrritate" value="Non irritable">Non painful<br />
+<input type="checkbox" name="SINIrritate" value="Mild">Mild<br />
+<input type="checkbox" name="SINIrritate" value="Moderate">Moderate<br />
+<input type="checkbox" name="SINIrritate" value="Severe">Severe<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 10 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(17)&nbsp;Read about verbal and visual analogue scores.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - VAS]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(What would you estimate is the severity of the symptoms based on <q>Pain score</q>? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="VAS2" value="Non painful">Non painful<br />
+<input type="checkbox" name="VAS2" value="Mild">Mild<br />
+<input type="checkbox" name="VAS2" value="Moderate">Moderate<br />
+<input type="checkbox" name="VAS2" value="Severe">Severe<br /></div>
+
+<div class="PageReadableDarkGreen"><p>Clip 11 - Audio Transcript of Video</p></div>
+
+<div class="PageReadableBlue"><p>(16)&nbsp;Read about <q>SIN</q> factors and description of pain.</div>&nbsp;<div class="PageReadableBlack"><strong>[doc/pdf/ref - SIN Factor] &nbsp;[doc/pdf/ref - Description of Pain]</strong></div></p>
+
+<div class="PageReadableBlue"><p>(a)&nbsp;Estimate the severity of the symptoms based on <q>duration of pain</q>? (Please choose as many as applicable)</p>
+
+<input type="checkbox" name="SINPainLevel" value="Non painful">Non painful<br />
+<input type="checkbox" name="SINPainLevel" value="Mild">Mild<br />
+<input type="checkbox" name="SINPainLevel" value="Moderate">Moderate<br />
+<input type="checkbox" name="SINPainLevel" value="Severe">Severe<br /></div>
+
+
+
+
+
+
+<p><input type=submit name="submit" value="Submit Answers"></p>
+
+</form>
+</body>
+</html>
