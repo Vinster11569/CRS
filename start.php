@@ -135,7 +135,7 @@ if ((($Username=="student") && ($PWD=="physio")) ||
 
 	  }
   
-	  echo "</p><p><a href=\"logon.html\">Back to Logon Page.</a></p>";
+	  echo "</p><p><a href=\"index.html\">Back to Logon Page.</a></p>";
 	  echo "<hr />";}
 
     else {	
@@ -171,7 +171,7 @@ else {
 	echo "</strong>";
 	echo"</div>";
 	echo "<br />";
-	echo "<p><a href=\"logon.html\">Please Click Here to Return Back to Logon Page.</a></p>";
+	echo "<p><a href=\"index.html\">Please Click Here to Return Back to Logon Page.</a></p>";
 	}
 echo "<hr /><p align=\"center\"><img src=\"./images/cslab2.jpg\" alt=\"Clinical Skills Lab\" /></p><hr /><hr /></body></html>";
 ?>
